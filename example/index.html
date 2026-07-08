@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childcare Facility Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chatbot-wrapper">
+            <div class="header">
+                <h1>🏥 Childcare Facility Assistant</h1>
+                <p>Ask about our facilities</p>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+                <div class="message bot-message">
+                    <p>こんにちは！ (Hello!) How can I help you today?</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask about facilities, capacity, availability, hours..."
+                    autocomplete="off"
+                >
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/server.js"></script>
+    <script src="scripts/analysis.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
